@@ -36,3 +36,70 @@
     transform: rotate(360deg);
   }
 }
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border: solid black 3px;
+  margin-right: 20px;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.button-container {
+  margin-left: 20px;
+}
+
+
+/* Выровнять весь контейнер по центру */
+.container {
+  display: flex;
+  flex-direction: column; /* Добавлено для расположения элементов в столбик */
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Занять всю высоту экрана */
+  background-color: #f0f0f0; 
+}
+
+/* Стили для блока с инпутами и кнопкой */
+.input-task {
+  display: flex;
+  flex-direction: column; /* Элементы размещены вертикально */
+  justify-content: center;
+  align-items: center;
+  width: 300px; /* Общая ширина формы */
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 15px; /* Пространство между элементами */
+}
+
+/* Стили для инпутов */
+input[type="text"] {
+  width: 100%; /* Инпуты занимают всю ширину контейнера */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box; /* Убедиться, что padding не влияет на ширину */
+}
+
+/* Стили для кнопки */
+button {
+  border-radius: 7px;
+  width: 75px;
+  height: 40px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
